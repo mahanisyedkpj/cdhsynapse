@@ -2,8 +2,6 @@ name: Sync to Hugging Face hub
 on:
   push:
     branches: [main]
-
-  # This will allow you run manually from Action tab if neccesary -hanshaddad
   workflow_dispatch:
 
 jobs:
@@ -17,6 +15,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        # Please ensure username and nama space below are correct-hanshaddad
-
-       run: git push --force https://MahaniSA:$HF_TOKEN@huggingface.co/spaces/MahaniSA/kpj-pathway-demo main
+        run: git push --force https://MahaniSA:$HF_TOKEN@huggingface.co/spaces/MahaniSA/kpj-pathway-demo HEAD:main
