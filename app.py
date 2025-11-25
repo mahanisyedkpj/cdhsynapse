@@ -390,7 +390,7 @@ def render_search(df):
                 if len(res_text) > 70: res_text = res_text[:70] + "..."
                 if res_text == "nan": res_text = "-"
                 html_rows += f'<tr style="{bg_style}"><td><a href="{link}" target="_self" class="doctor-link">{row["Specialist"]}</a></td><td>{status_badge}</td><td style="color:#666;">{res_text}</td></tr>'
-            st.markdown(f'<div class="table-container"><table><thead><tr><th width="30%">Specialist Name</th><th width="25%">Subspecialty</th><th width="45%">Latest Research</th></tr></thead><tbody>{html_rows}</tbody></table></div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="table-container"><table><thead><tr><th width="30%">Specialist Name</th><th width="25%">Subspecialty</th><th width="45%">Research</th></tr></thead><tbody>{html_rows}</tbody></table></div>', unsafe_allow_html=True)
 
     with col_profile:
         if selected_doc_id:
