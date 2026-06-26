@@ -1,9 +1,6 @@
+streamlit
 pandas
 numpy<2.0.0
 plotly
 rapidfuzz
-scikit-learn
 openpyxl
-Pillow
-matplotlib
-seaborn
